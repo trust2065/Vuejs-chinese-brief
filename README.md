@@ -1,3 +1,21 @@
+# 最簡設定
+```
+<div class="app">
+  {{val}}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  var app = new Vue({
+    el: ".app",
+    data: {
+      val: "value 1"
+    }
+  });
+</script>
+
+```
+
+
 # 常用
 ```
 <a :href="...">Sth</a>
@@ -18,7 +36,9 @@
 </ul>
 ```
 
-## attribute
+# 簡述
+
+## Attribute
 
 ```
 v-bind:href="..."
@@ -28,7 +48,7 @@ v-bind:href="..."
 <a :href="...">Sth</a>
 ```
 
-## event
+## Event
 
 ```
 v-on:click
@@ -37,14 +57,14 @@ ex:
 `<span @click="clickmethod"></span>`
 ```
 
-## text
+## Text
 
 ```
 {{sth}}
 {{condition ? 'y' : 'n'}} > 只能寫statement, 不能寫expression
 ```
 
-## directive
+## Directive
 
 ```
 v-if
@@ -58,7 +78,7 @@ v-else
   
 </template>
 ```
-## loop
+## Loop
 
 v-for
 ```
