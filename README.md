@@ -233,8 +233,28 @@ Vue.component('my-component', {
 
 ```
 
+## Props檢查型別
+
+寫一個名為props的物件即可檢查
+
+Vue.component('my-component', {
+  props: {
+    parentMsg: null, //不檢查
+    prop1: Number,
+    prop2: [String, Number], //可接受兩種
+    prop3: {
+      type: Number,
+      default: 100,
+      required: true
+    },
+    prop4: {
+      validator: function(value) {
+        return value>10;
+      }
+    }
+  }
+});
 
 
-
-
-
+## 單向資料流
+Props in, Event out
