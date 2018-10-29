@@ -237,6 +237,7 @@ Vue.component('my-component', {
 
 寫一個名為props的物件即可檢查
 
+```
 Vue.component('my-component', {
   props: {
     parentMsg: null, //不檢查
@@ -254,7 +255,7 @@ Vue.component('my-component', {
     }
   }
 });
-
+```
 
 ## 單向資料流
 Props in, Event out
